@@ -136,7 +136,7 @@ jobs:
         timeout-minutes: 25
         shell: pwsh
         run: |
-          $args = "${{ inputs.url }}", "--name", "${{ inputs.name }}", "--proxy-url socks5://127.0.0.1:7891"
+          $args = "${{ inputs.url }}", "--name", "${{ inputs.name }}"
 
           if ("${{ inputs.icon }}" -ne "") {
             $args += "--icon", "${{ inputs.icon }}"
